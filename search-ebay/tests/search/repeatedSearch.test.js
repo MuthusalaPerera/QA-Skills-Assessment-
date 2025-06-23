@@ -14,5 +14,5 @@ test('TC005 - Repeated search returns results', async ({ page }) => {
   const secondCount = await search.getSearchResultsCount();
 
   expect(secondCount).toBeGreaterThan(0);
-  expect(secondCount).toBeGreaterThanOrEqual(firstCount - 5); // Allow slight variation
+  expect(secondCount).toBeGreaterThanOrEqual(firstCount - 5); 
 });
