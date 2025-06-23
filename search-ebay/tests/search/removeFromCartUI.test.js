@@ -8,10 +8,10 @@ test('TC016 - Remove from cart button availability', async ({ page }) => {
   const addToCart = await page.$('a#atcRedesignId_btn');
   if (addToCart) {
     await addToCart.click();
-    await page.waitForTimeout(2000); // wait for cart modal
+    await page.waitForTimeout(2000);
     const remove = await page.$('button[aria-label*="Remove"]');
     expect(remove).not.toBeNull();
   } else {
-    expect(true).toBe(true); // Skip if no add-to-cart
+    expect(true).toBe(true);
   }
 });
