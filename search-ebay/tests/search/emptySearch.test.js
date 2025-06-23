@@ -7,5 +7,5 @@ test('TC004 - Empty search submission', async ({ page }) => {
   await search.enterSearchText('');
   await search.clickSearchButton();
   const url = page.url();
-  expect(url).toContain('https://www.ebay.com'); // No navigation if search is empty
+  expect(url).toContain('https://www.ebay.com');
 });
