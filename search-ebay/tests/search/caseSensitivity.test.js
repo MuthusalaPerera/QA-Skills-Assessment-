@@ -15,5 +15,5 @@ test('TC007 - Case sensitivity in search', async ({ page }) => {
 
   expect(lowerCaseCount).toBeGreaterThan(0);
   expect(upperCaseCount).toBeGreaterThan(0);
-  expect(Math.abs(upperCaseCount - lowerCaseCount)).toBeLessThanOrEqual(10); // allow small variation
+  expect(Math.abs(upperCaseCount - lowerCaseCount)).toBeLessThanOrEqual(10); 
 });
