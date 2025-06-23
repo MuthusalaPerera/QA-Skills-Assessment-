@@ -1,0 +1,11 @@
+{
+  "name": "search-ebay-playwright-js",
+  "version": "1.0.0",
+  "description": "Automation framework for eBay search functionality using Playwright",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.43.0"
+  }
+}
