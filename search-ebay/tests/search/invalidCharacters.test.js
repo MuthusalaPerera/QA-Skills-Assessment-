@@ -7,5 +7,5 @@ test('TC003 - Invalid characters in search', async ({ page }) => {
   await search.enterSearchText('@#$%');
   await search.clickSearchButton();
   const resultCount = await search.getSearchResultsCount();
-  expect(resultCount).toBeGreaterThanOrEqual(0); // eBay may return some results or suggestions
+  expect(resultCount).toBeGreaterThanOrEqual(0); 
 });
