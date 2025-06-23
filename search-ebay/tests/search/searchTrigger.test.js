@@ -7,5 +7,5 @@ test('TC001 - Search not triggered with less than 3 characters', async ({ page }
   await search.enterSearchText('La');
   await search.clickSearchButton();
   const resultCount = await search.getSearchResultsCount();
-  expect(resultCount).toBeGreaterThan(0); // eBay triggers search anyway, so we check result count
+  expect(resultCount).toBeGreaterThan(0);
 });
